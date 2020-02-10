@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="static/css/reset.css">
+    <title>幸福1+1</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <!-- <script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js "></script> -->
+   <script src="//g.alicdn.com/mtb/lib-flexible/0.3.2/flexible.js"></script>
+</html>
+
+<script type="text/javascript">
+
+//禁用微信控件
+ function onBridgeReady() {
+  WeixinJSBridge.call('hideOptionMenu');
+ }
+
+ if (typeof WeixinJSBridge == "undefined") {
+  if (document.addEventListener) {
+   document.addEventListener('WeixinJSBridgeReady', onBridgeReady,
+     false);
+  } else if (document.attachEvent) {
+   document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+   document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+  }
+ } else {
+  onBridgeReady();
+ }
+</script>
+
+<script type="text/javascript">
+// 对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器
+ //  var useragent = navigator.userAgent;
+ // if (useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
+ //  // 这里警告框会阻塞当前页面继续加载
+ //  alert('已禁止本次访问：您必须使用微信企业号访问本页面！');
+ //  // 以下代码是用javascript强行关闭当前页面
+ //  var opened = window.open('about:blank', '_self');
+ //  opened.opener = null;
+ //  opened.close();
+ // } 
+
+
+
+</script>
