@@ -12,9 +12,8 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
         '/api':{
-            // target:'http://119.3.43.73:8072',
-            // target:'http://renbao.lpcknew.com',
-            target:'http://gh.picczj.com',
+            // target:'http://:8072',
+           
             // target:'http://10.9.1.179:8082',
             changeOrigin:true,
             secure: false,
